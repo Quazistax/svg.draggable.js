@@ -29,7 +29,7 @@
         /* get element bounding box */
         var box = element.bbox()
         
-        if (element instanceof SVG.G) {
+        if (element instanceof SVG.G || element instanceof SVG.Use) {
           box.x = element.x()
           box.y = element.y()
           
